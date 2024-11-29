@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kasse/handlekurv</title>
+</head>
+<body>
+    <div id="grid-container">
+        <header id="global-header">
+            <p><a href="index.html"><img id="main-logo" src="bilder/logo.jpg" alt="Nettsted logo"></a></p>
+            <nav class="flex-space-b h2">
+                <form>
+                    <label for="search"></label>
+                    <input type="search" placeholder="Søk her" id="search">
+                    <input type="submit" value="søk"><i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <ul class="flex-menu">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="product.html">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Kasse</h2>
+            </section>
+            <section>
+                <h2>1. SHOPPINGBAGEN DIN</h2>
+            </section>
+            <div>
+                <section class="flex-space-b">
+                    <article class="product-card-b">
+                        <picture>
+                            <img src="bilder/Produktbilde.png" alt="Produktbilde">
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <img src="bilder/Produktbilde.png" alt="Produktbilde">
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <img src="bilder/Produktbilde.png" alt="Produktbilde">
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                </section>
+            </div>
+            <section>
+                <h2>2. DINE OPPLYSNINGER</h2>
+                <h3>Leveringsadresse</h3>
+                <form>
+                    <section>Fornavn</section>
+                    <input type="text" class="form input">
+                    <section>Etternavn</section>
+                    <input type="text" class="form input">
+                    <section>Gateadresse</section>
+                    <input type="text" class="form input">
+                    <section>Postnummer</section>
+                    <input type="text" class="form input">
+                    <section>Poststed</section>
+                    <input type="text" class="form input">
+                    <h4>Kontaktinformasjon</h4>
+                    <section>E-post</section>
+                    <input type="text" class="form input">
+                    <section>Telefon</section>
+                    <input type="text" class="form input">
+                    <section></section>
+                    <input type="submit" name="lagre" value="Lagre">
+                    <section></section>
+                    <input type="submit" name="avbryt" value="Avbryt">
+                </form>
+            </section>
+            <section>
+                <h2>3. LEVERING</h2>
+                <h3>Leveringsvalg</h3>
+                <form class="product-card">
+                    <label>
+                        <input type="radio" name="valg" required>Ekspress Hjemmelevering</input>
+                        <h4>3-4 Virkedager</h4>
+                        <p>59 kr,- <i class="fa-solid fa-truck"></i></p>
+                        <p>Bestilling til hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager.</p>
+                    </label>
+                </form>
+                <form class="product-card">
+                    <label>
+                        <input type="radio" name="valg" required>Ekspress pakke til utleveringssted</input>
+                        <h4>1-3 Virkedager</h4>
+                        <p>59 kr,-</p>
+                    </label>
+                </form>
+                <form class="product-card">
+                    <label>
+                        <input type="radio" name="valg" required>Ekspress Hjemmelevering</input>
+                        <h4>5-8 Virkedager</h4> 
+                        <p>Gratis <i class="fa-solid fa-box"></i></p>
+                        <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager</p>   
+                    </label>
+                </form>
+            </section>
+            <section>
+                <h2>4. BETALING</h2>
+            </section>
+            <section class="product-card">
+                <h3>Betale med Kort <i class="fa-solid fa-credit-card"></i></h3>
+                <h4>Kortnummer</h4>
+                    <form>
+                        <label>
+                            <input type="text" class="form input" placeholder="123456789101213">
+                        </label>
+                    </form>
+                <h4>Utløpsdato</h4>
+                <form>
+                    <label>
+                        <input type="date" max="2027-12-31" required> <i class="fa-regular fa-calendar"></i>
+                    </label>
+                </form>
+                <h4>CVC/CVV</h4>
+                <form>
+                    <label>
+                        <input type="text" class="form input" placeholder="CVC/CVV">
+                    </label>
+                </form>
+                <section>
+                    <h3>Å betale inkl. mva.</h3>
+                    <h2>2499 kr</h2>
+                    <input type="submit" name="fulffør kjøp" value="Fullfør kjøp">
+                </section>
+            </section>
+        </main>
+        <aside>
+        </aside>
+            <footer class="footer">
+                <section class="footer">
+                    <p><a href="index.html"><img id="Logofooter" src="bilder/logo.jpg" alt="Nettsted logo"></a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </section>
+                <section class="footer">
+                    <h2>Kontakt</h2>
+                    <h3>Adresse:</h3>B R A Veien 4, 1757 Halden
+                    <h3>Telefon:</h3><p>69 60 80 00</p>
+                    <h3>Epost:</h3><p>mohamahi@hiof.no</p>
+                    <h3>Åpningstider:</h3><p>Stenger 15:00</p>
+                </section>
+                <section class="footer">
+                    <h2>Snarveier</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Produkter</a></li>
+                            <li><a href="#">Kategorier</a></li>
+                            <li><a href="#">Kontakt oss</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="footer">
+                    <h2>Sosiale Medier</h2>
+                    <nav>
+                        <ul class="flex-menu">
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </footer>
+    </div>
+</body>
+</html>

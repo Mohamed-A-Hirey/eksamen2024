@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +9,180 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Forside</title>
 </head>
-<body>
+    <body>
     <div id="grid-container">
-        <header id="global header">
-            <nav>
-                <ul id="flex-menu">
-                    <li><a href="#"></a></li>
+        <header id="global-header">
+            <p><a href="index.html"><img id="main-logo" src="bilder/logo.jpg" alt="Nettsted logo"></a></p>
+            <!--bildekilde:https://www.pngkey.com/detail/u2q8i1i1i1w7y3y3_logos-what-is-a-generic-logo-transparent-background/-->
+            <nav class="flex-space-b h2">
+                <form>
+                    <label for="search"></label>
+                    <input type="search" placeholder="Søk her" id="search">
+                    <input type="submit" value="søk"><i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <ul class="flex-menu" id="menu">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="product.html">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section id="banner">
-                <div>
-                    <h2>Våre beste deals</h2>
-                </div>
+                <h2>Excepteur sint occaecat cupidatat non proident, sunt in culpa </h2>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                <nav>
+                    <ul class="flex-menu">
+                        <li><a href="#">Les mer</a></li>
+                    </ul>
+                </nav>
             </section>
-            <section>
-                <h2>Våre mest populære produkter</h2>
-                <article>
-                </article>
+            <section class="flex-space-b">
+                    <section id="grid">
+                    <h2>Våre mest populære produkter</h2>
+                    </section>
+                    <ul class="flex-menu">
+                        <li><a href="#">Nye produkter</a></li>
+                        <li><a href="#">Spesial pris</a></li>
+                        <li><a href="#">Bestselgere</a></li>
+                    </ul>
+                <section class="flex-space-b">
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                    <article class="product-card">
+                        <picture>
+                            <a href="product.html"><img src="bilder/Produktbilde.png" alt="Produktbilde"></a>
+                        </picture>
+                        <h3>Product Name</h3>
+                        <p>1999 kr,-</p>
+                        <!--bildekilde:https://sportoutlet.no/product/58828?c=17125-->
+                    </article>
+                </section>
             </section>
             <section>
                 <h2>Våre mest populære kategorier</h2>
-                <article>
+                <article class="grid">
+                    <h3>Category 1</h3>
+                    <h3>Category 2</h3>
+                    <h3>Category 3</h3>
+                    <h3>Category 4</h3>
+                    <h3>Category 5</h3>
                 </article>
             </section>
+        <Section class="flex-space-c">
+            <h2>Anmeldelser</h2>
+            <section class="grid">
+                <article class="product-card">
+                    <img src="bilder/anmeldelsebilde.jpg" alt="Anmeldelsebilde">
+                    <h3>John Doe</h3>
+                    <!--bildekilde:https://www.rawpixel.com/image/9074468/png-black-technology-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </section>
+            <section>
+                <article class="product-card">
+                    <img src="bilder/anmeldelsebilde.jpg" alt="Anmeldelsebilde">
+                    <h3>John Doe</h3>
+                    <!--bildekilde:https://www.rawpixel.com/image/9074468/png-black-technology-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </section>
+            <section>
+                <article class="product-card">
+                    <img src="bilder/anmeldelsebilde.jpg" alt="Anmeldelsebilde">
+                    <h3>John Doe</h3>
+                    <!--bildekilde:https://www.rawpixel.com/image/9074468/png-black-technology-->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </section>
+            <section>
+                <article class="product-card">
+                    <img src="bilder/anmeldelsebilde.jpg" alt="Anmeldelsebilde">
+                    <!--bildekilde:https://www.rawpixel.com/image/9074468/png-black-technology-->
+                    <h3>John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </article>
+            </section>
+        </section>
         </main>
-    </div>
         <aside>
         </aside>
-            <footer>
-                <section>
-
+            <footer class="footer">
+                <section class="footer">
+                    <p><a href="index.html"><img id="Logofooter" src="bilder/logo.jpg" alt="Nettsted logo"></a></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </section>
+                <section class="footer">
+                    <h2>Kontakt</h2>
+                    <h3>Adresse:</h3>B R A Veien 4, 1757 Halden
+                    <h3>Telefon:</h3><p>69 60 80 00</p>
+                    <h3>Epost:</h3><p>mohamahi@hiof.no</p>
+                    <h3>Åpningstider:</h3><p>Stenger 15:00</p>
+                </section>
+                <section class="footer">
+                    <h2>Snarveier</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Produkter</a></li>
+                            <li><a href="#">Kategorier</a></li>
+                            <li><a href="#">Kontakt oss</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="footer">
+                    <h2>Sosiale Medier</h2>
+                    <nav>
+                        <ul class="flex-menu">
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </nav>
                 </section>
             </footer>
-    
+    </div>
     </body>
 </html>
